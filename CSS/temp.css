@@ -1,0 +1,137 @@
+#content {
+    min-height: calc(576px + 130px);
+    padding-bottom: 1em;
+}
+
+#leaderboard {
+    width: 960px;
+    margin: auto;
+
+}
+
+#board_title {
+    display:flex;
+    list-style: none;
+    padding: 0;
+}
+
+#board_title li {
+    background: #464646;
+    padding : .5em 0;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 2px 0 #353535 inset, -2px 0 #353535 inset;
+}
+
+#board_title li:first-child {
+    box-shadow : -2px 0 #353535 inset;
+}
+
+#board_title li:last-child {
+    box-shadow : 2px 0 #353535 inset;
+}
+
+
+#board {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding : 0;
+    margin : 0;
+}
+
+.board_line {
+    display: flex;
+    list-style: none;
+    padding : 0;
+
+}
+
+.board_line li {
+    text-align: center;
+    padding: .6em 0 .2em;
+    line-height: 2.2em;
+}
+
+#board > li:nth-child(odd) {
+    background: #252525;
+}
+
+#board > li:nth-child(even) {
+    background: #323232;
+}
+
+.sub_lines > ul:nth-child(odd) {
+    background: #616161;
+}
+
+.sub_lines > ul:nth-child(even) {
+    background: #4c4c4c;
+}
+
+.display_sublines {
+    display: none;
+}
+
+.display_sublines:checked ~ .board_line {
+    background: #4c4c4c;
+}
+
+.sub_lines {
+    display: none;
+}
+
+.display_sublines:checked ~ .sub_lines {
+    display: block;
+}
+
+.niveau, .rang, .perso, .temps, .date, .details {
+    flex : 2;
+}
+
+.joueur {
+    flex : 2;
+}
+
+.competences {
+    flex : 3;
+}
+
+.display_list {
+    margin-left : .5em;
+}
+
+.display_list::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: .5em solid transparent;
+    border-right: .5em solid transparent;
+    border-top: .5em solid #e5a700;
+}
+
+.display_sublines:checked ~ .board_line .niveau .display_list::after {
+    border-top: none;
+    border-bottom: .5em solid grey;
+}
+
+.cross {
+    background: #0a940a;
+    height: .75em;
+    position: relative;
+    width: .15em;
+    margin: auto;
+    display: inline-block;
+}
+.cross:after {
+    background: #0a940a;
+    content: "";
+    height: .15em;
+    left: -.3em;
+    position: absolute;
+    top: .3em;
+    width: .75em;
+}
+
+

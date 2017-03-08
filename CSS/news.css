@@ -1,0 +1,94 @@
+.news {
+    padding: 1em;
+    border-bottom: .2em dashed #464646;
+}
+
+h3 + p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h3 a {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+img + p {
+    margin : 1em 0;
+}
+
+a {
+    color : #e5a700;
+}
+
+.showMore {
+    display: block;
+    text-align: center;
+    text-decoration : none;
+    padding-top: .5em;
+}
+
+.showMore:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    background: #6b6a6a;
+    border: none;
+    padding: .5em 1em;
+    height: 4.5em;
+    font-family: "Century Gothic", helvetica, arial, sans-serif;
+    border-radius: .6em .6em 0 .6em;
+    color: #222222;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    align-self: flex-end;
+    background: #e5a700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border: none;
+    padding: .5em 1em;
+    border-radius: 0 0 .4em .4em;
+}
+
+.comment_list {
+    background: #464646;
+    margin-top: 1em;
+}
+
+.comment p:first-child {
+    padding: 1em 0 0 1em;
+}
+
+.comment p:first-child span {
+    text-transform: uppercase;
+    color: #e5a700;
+}
+
+.comment p:last-child {
+    background: #828282 url(../resources/quote_light.png) no-repeat .5em -.3em;
+    padding: 1em 1em 1em 5em;
+    margin: 0 1em;
+    color: #353535;
+    display: inline-block;
+    -webkit-border-radius: .6em;
+    -moz-border-radius: .6em;
+    border-radius: .6em;
+}
+
+.comment:last-child {
+    padding-bottom: 1em;
+}

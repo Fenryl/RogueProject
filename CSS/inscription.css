@@ -1,0 +1,68 @@
+form {
+    width: 33%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #464646;
+    padding: 1em;
+    border-radius: .6em;
+    font-size : .8571em;
+}
+
+form p {
+    margin : 0;
+}
+
+input + label {
+    margin-top: 1em;
+}
+
+
+input {
+    border: .15em solid #e5a700;
+    line-height: 2em;
+}
+
+.sign_field {
+    width: 100%;
+    background: #fff;
+    padding : 0 .5em;
+    font-size : .8571em;
+}
+
+#sign_buttons {
+    margin-top: 2em;
+    display: flex;
+}
+
+.sign_button:last-child {
+    margin-left : 1em;
+}
+
+.sign_button {
+    flex:1;
+    background : #e5a700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: green;
+    font-weight : bold;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: green;
+    font-weight : bold;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: green;
+    font-weight : bold;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: green;
+    font-weight : bold;
+}
